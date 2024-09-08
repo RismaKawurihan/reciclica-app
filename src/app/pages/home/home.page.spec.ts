@@ -20,6 +20,7 @@ describe('HomePage', () => {
 
     fixture = TestBed.createComponent(HomePage);
     router = TestBed.get(Router);
+
     component = fixture.componentInstance;
 
   }));
@@ -30,14 +31,14 @@ describe('HomePage', () => {
     component.goToPickupCalls();
 
     expect(router.navigate).toHaveBeenCalledWith(['pickup-calls']);
-  })
+  });
 
-  it('should go to pickup-calls on create pickup call', () => {
+  it('should go to new pickup-calls on create pickup-call', () => {
     spyOn(router, 'navigate');
 
-    component.newPickupCall();
+    component.newToPickupCall();
 
-    expect(router.navigate).toHaveBeenCalledWith(['pickup-call']);
-  })
+    expect(router.navigate).toHaveBeenCalledWith(['pickup-calls']);
+  });
 
 });

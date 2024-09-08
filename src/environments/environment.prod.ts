@@ -1,5 +1,4 @@
 export const environment = {
-  production: true,
   firebaseConfig: {
     apiKey: "AIzaSyAizoJadZrTXddkgIHPMGpaRMva2Ofnj6U",
     authDomain: "reciclica-d07de.firebaseapp.com",
